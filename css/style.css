@@ -1,8 +1,9 @@
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5em;
+
   /* For webkit */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -139,4 +140,28 @@ nav ul li a.menu-active {
 
 .layer ul {
   padding: 5px 20px;
+}
+
+.two-column-grid {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-column-grid div img {
+  width: 100%;
+}
+
+.button {
+  padding: 7px 40px;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#announcement {
+  color: white;
+  background-color: grey;
+  text-align: center;
 }
