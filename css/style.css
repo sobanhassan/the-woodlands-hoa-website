@@ -1,0 +1,142 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  /* For webkit */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1080px;
+}
+
+.justify {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adjust {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 110px;
+  z-index: 10;
+}
+
+.navcontent {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px 300px auto;
+}
+
+.mainnav,
+.secondary-nav {
+  display: grid;
+  grid-row: 1/3;
+  grid-template-columns: repeat(6, auto);
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-logo {
+  background-color: grey;
+  position: absolute;
+  grid-column: 2;
+  padding: 40px 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li {
+  padding: 40px 5px 0px 5px;
+}
+
+nav ul li:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav ul li:hover a {
+  color: black;
+}
+
+nav ul li a.menu-active {
+  color: var(--button-color);
+  text-decoration: underline;
+  background-color: white;
+  font-weight: 600;
+}
+
+.mainnav {
+  grid-column: 3;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.three-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.quick-tab1 {
+  color: white;
+  background-image: url('../images/woodland1.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.quick-tab2 {
+  color: white;
+  background-image: url('../images/woodland2.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.quick-tab3 {
+  color: white;
+  background-image: url('../images/woodland3.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.layer {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  outline: 1px solid white;
+  outline-offset: -10px;
+  
+}
+
+.layer h3 {
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+.layer ul {
+  padding: 5px 20px;
+}
