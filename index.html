@@ -36,7 +36,7 @@
                     <div><a href="contact.php" class="hover">Contact</a></div>
                     <div><a href="faqs.php" class="hover">FAQs</a></div>
                 </div>
-                
+
             </div>
         </div>
     </nav>
@@ -46,7 +46,13 @@
 </header>
 
 <body>
-    <div class="three-column-grid justify">
+    <!--Fillibuster For Facebook Embeded-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=1897273240593689&autoLogAppEvents=1"
+        nonce="9MjCigKv"></script>
+    <!--End of Facebook script-->
+    <div class="three-column-grid justify offset-top">
         <div class="quick-tab1 layer">
             <h3>Woodlands' Community</h3>
             <ul>
@@ -74,7 +80,7 @@
             </ul>
         </div>
     </div>
-    <div class="two-column-grid justify">
+    <div class="two-column-grid justify adjust">
         <div>
             <h1>Welcome to Woodlands</h1>
             <p>The Woodlands neighborhood is located at 53rd Avenue and Middle round-about, near Pleasant Valley
@@ -84,7 +90,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem neque hic recusandae non sapiente minima,
                 maxime ab exercitationem enim quaerat doloremque adipisci molestiae, fuga asperiores et laborum aperiam
                 facere soluta.</p>
-            <a class="button" href="learn more">Learn More ></a>
+            <p><a class="button" href="learn more">Learn More ></a></p>
         </div>
         <div>
             <img src="images/woodland3.png" alt="Woodland Photo">
@@ -93,38 +99,63 @@
     <div class="wordpress-section">
         <div id="announcement">
             <h1>Announcement from the HOA Board</h1>
-            <p>Updated on 10/19/2022</p>
+            <p id="date">Updated on 10/19/2022</p>
         </div>
         <div class="text-box justify adjust">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla tempora magnam possimus, quod laboriosam
-                itaque rerum explicabo accusantium fugit cum veritatis omnis dolorum pariatur placeat corrupti quaerat! Officia,
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla tempora magnam possimus, quod
+                laboriosam
+                itaque rerum explicabo accusantium fugit cum veritatis omnis dolorum pariatur placeat corrupti quaerat!
+                Officia,
                 beatae?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla tempora magnam possimus, quod laboriosam
-                itaque rerum explicabo accusantium fugit cum veritatis omnis dolorum pariatur placeat corrupti quaerat! Officia,
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla tempora magnam possimus, quod
+                laboriosam
+                itaque rerum explicabo accusantium fugit cum veritatis omnis dolorum pariatur placeat corrupti quaerat!
+                Officia,
                 beatae?</p>
         </div>
-        
+
+    </div>
+    <div class="two-column-grid justify adjust">
+        <div>
+            <p><a class="button" href="">Board Members ></a></p>
+            <p><a class="button" href="">Meeting Minutes ></a></p>
+            <p><a class="button" href="">Lorem Ipsum ></a></p>
+        </div>
+        <div class="fb-container">
+            <div class="fb-page" data-href="https://www.facebook.com/MentorshipProj/" data-tabs="timeline" data-width="900"
+                data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/MentorshipProj/" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/MentorshipProj/">The Mentorship Project</a></blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="justify">
+        <h1 align="center">Photo Gallery</h1>
+        <div class="three-column-grid">
+            <img src="./images/woodland1.png" alt="asd">
+            <img src="./images/banner.png" alt="asd">
+            <img src="./images/woodland3.png" alt="asd">
+        </div>
     </div>
     
-    <p><a href="">Board Members</a></p>
-    <p><a href="">Meeting Minutes</a></p>
-    <p><a href="">Lorem Ipsum</a></p>
-    <h1>Photo Gallery</h1>
-    <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
+    
 </body>
 <footer>
-    <img src="" alt="">
-    <ul class="mainnav list-style-remove" id="menu">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="aboutus.php">About Us</a></li>
-        <li><a href="plans.php">Plans</a></li>
-        <li><a href="news-and-events.php">News & Events</a></li>
-        <li><a href="contact.php">Contact</a></li>
-    </ul>
+    <div class="justify">
+        <img src="images/whitelogo1920.png" alt="logo">
+        <ul class="mainnav list-style-remove" id="menu">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.php">About Us</a></li>
+            <li><a href="plans.php">Plans</a></li>
+            <li><a href="news-and-events.php">News & Events</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
+    <div class="justify two-column-grid">
+        <p>Copyright 2022 The Woodlands Neighborhood of Bettendorf</p>
+        <p>Sites by Augustana Web Guild</p>
+    </div>
 </footer>
 
 </html>
