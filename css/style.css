@@ -120,6 +120,44 @@ body div > h1 {
 }
 
 /* End of Navigation Bar*/
+/* Navigation Bar */
+/*.dropdown {*/
+/*  float: left;*/
+/*  overflow: hidden;*/
+/*}*/
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  position: relative !important;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--hero-color);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: auto;
+  border-top: var(--light-border);
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-bottom: var(--light-border);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* End */
+
 .banner {
   width: 100%;
   max-height: 1080px;

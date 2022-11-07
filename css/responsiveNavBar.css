@@ -31,6 +31,24 @@
   .toggle .l3 {
     transform: rotate(45deg) translate(-6.5px, -6.5px);
   }
+  .arrow-relative {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+  }
+  .arrow-container {
+    display: grid;
+  }
+  
+  .nav-arrow {
+    height: 25px;
+    transform: rotate(0);
+    transition: transform 100ms ease;
+  }
+  .dropdown:hover .nav-arrow {
+    transform: rotate(90deg);
+  }
+  
   
   @media screen and (max-width: 771px) {
     .mainnav {

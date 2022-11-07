@@ -30,7 +30,17 @@
             <div class="mainnav list-style-remove" id="menu">
                 <div class="menu add-padding-right">
                     <div><a href="index.php" class="hover">Home</a></div>
-                    <div><a href="aboutus.php" class="hover">About Us</a></div>
+                    <div class="dropdown">
+                        <a href="aboutus.php" class="hover arrow-relative">About Us
+                            <span class="arrow-container">
+                                <img class="nav-arrow" src="images/arrow.png" alt="arrow" />
+                            </span>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#" class="navlink hover">Board Members</a>
+                            <a href="#" class="navlink hover">Photo Gallery</a>
+                        </div>
+                    </div>
                     <div><a href="members-only.php" class="hover">Members Only</a></div>
                     <div><a href="policies.php" class="hover">Policies & Info</a></div>
                     <div><a href="contact.php" class="hover">Contact</a></div>
@@ -140,6 +150,7 @@
     </div>
     
     
+<script src="js/responsiveNavBar.js"></script>
 </body>
 <footer>
     <div class="justify">
